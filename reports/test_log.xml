@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="4" hostname="INBLRNB0299" name="smoke" skipped="0" tests="5" time="24.078" timestamp="2021-03-17T18:53:37.990444"><testcase classname="tests.test_add_new_payee.Test_AddNewPayee" file="tests\test_add_new_payee.py" line="26" name="test_add_new_payee[Oliver Byrd-84, Ajay Chowk, Bikaner - 204957-12119415161215-Mother]" time="16.278"><failure message="AssertionError: assert &apos;Oliver Byrd&apos; in [&apos;Sprint&apos;, &apos;Bank of America&apos;, &apos;Apple&apos;, &apos;Wells Fargo&apos;]">self = &lt;tests.test_add_new_payee.Test_AddNewPayee object at 0x0452C0D0&gt;, name = &apos;Oliver Byrd&apos;, adderss = &apos;84, Ajay Chowk, Bikaner - 204957&apos;
+account = &apos;12119415161215&apos;, details = &apos;Mother&apos;
+
+    @pytest.mark.parametrize(&quot;name,adderss,account,details&quot;,getData(&quot;PayeeDetails.xlsx&quot;,&quot;PayeeDetails&quot;))
+    def test_add_new_payee(self,name,adderss,account,details):
+        global paybills
+        paybills.add_new_payee(name,adderss,account,details)
+        options_text = paybills.get_payee_name_from_payee_dropdown()
+&gt;       assert name in options_text
+E       AssertionError: assert &apos;Oliver Byrd&apos; in [&apos;Sprint&apos;, &apos;Bank of America&apos;, &apos;Apple&apos;, &apos;Wells Fargo&apos;]
+
+tests\test_add_new_payee.py:32: AssertionError</failure></testcase><testcase classname="tests.test_add_new_payee.Test_AddNewPayee" file="tests\test_add_new_payee.py" line="26" name="test_add_new_payee[Philip Mooney-94, Kanika Heights, Hadapsar Delhi - 314957-12119415161216-Grand Father]" time="2.098"><failure message="AssertionError: assert &apos;Philip Mooney&apos; in [&apos;Sprint&apos;, &apos;Bank of America&apos;, &apos;Apple&apos;, &apos;Wells Fargo&apos;]">self = &lt;tests.test_add_new_payee.Test_AddNewPayee object at 0x045F51B0&gt;, name = &apos;Philip Mooney&apos;, adderss = &apos;94, Kanika Heights, Hadapsar Delhi - 314957&apos;
+account = &apos;12119415161216&apos;, details = &apos;Grand Father&apos;
+
+    @pytest.mark.parametrize(&quot;name,adderss,account,details&quot;,getData(&quot;PayeeDetails.xlsx&quot;,&quot;PayeeDetails&quot;))
+    def test_add_new_payee(self,name,adderss,account,details):
+        global paybills
+        paybills.add_new_payee(name,adderss,account,details)
+        options_text = paybills.get_payee_name_from_payee_dropdown()
+&gt;       assert name in options_text
+E       AssertionError: assert &apos;Philip Mooney&apos; in [&apos;Sprint&apos;, &apos;Bank of America&apos;, &apos;Apple&apos;, &apos;Wells Fargo&apos;]
+
+tests\test_add_new_payee.py:32: AssertionError</failure></testcase><testcase classname="tests.test_add_new_payee.Test_AddNewPayee" file="tests\test_add_new_payee.py" line="26" name="test_add_new_payee[Delilah Cook-66, Narayan Society, Preshita Chowk Meerut - 170233-12119415161217-Father]" time="2.058"><failure message="AssertionError: assert &apos;Delilah Cook&apos; in [&apos;Sprint&apos;, &apos;Bank of America&apos;, &apos;Apple&apos;, &apos;Wells Fargo&apos;]">self = &lt;tests.test_add_new_payee.Test_AddNewPayee object at 0x045F5470&gt;, name = &apos;Delilah Cook&apos;, adderss = &apos;66, Narayan Society, Preshita Chowk Meerut - 170233&apos;
+account = &apos;12119415161217&apos;, details = &apos;Father&apos;
+
+    @pytest.mark.parametrize(&quot;name,adderss,account,details&quot;,getData(&quot;PayeeDetails.xlsx&quot;,&quot;PayeeDetails&quot;))
+    def test_add_new_payee(self,name,adderss,account,details):
+        global paybills
+        paybills.add_new_payee(name,adderss,account,details)
+        options_text = paybills.get_payee_name_from_payee_dropdown()
+&gt;       assert name in options_text
+E       AssertionError: assert &apos;Delilah Cook&apos; in [&apos;Sprint&apos;, &apos;Bank of America&apos;, &apos;Apple&apos;, &apos;Wells Fargo&apos;]
+
+tests\test_add_new_payee.py:32: AssertionError</failure></testcase><testcase classname="tests.test_add_new_payee.Test_AddNewPayee" file="tests\test_add_new_payee.py" line="26" name="test_add_new_payee[Keyla Stark-65, Peter Villas, LataGunj Jabalpur - 424539-12119415161218-Brother]" time="2.016"><failure message="AssertionError: assert &apos;Keyla Stark&apos; in [&apos;Sprint&apos;, &apos;Bank of America&apos;, &apos;Apple&apos;, &apos;Wells Fargo&apos;]">self = &lt;tests.test_add_new_payee.Test_AddNewPayee object at 0x04617330&gt;, name = &apos;Keyla Stark&apos;, adderss = &apos;65, Peter Villas, LataGunj Jabalpur - 424539&apos;
+account = &apos;12119415161218&apos;, details = &apos;Brother&apos;
+
+    @pytest.mark.parametrize(&quot;name,adderss,account,details&quot;,getData(&quot;PayeeDetails.xlsx&quot;,&quot;PayeeDetails&quot;))
+    def test_add_new_payee(self,name,adderss,account,details):
+        global paybills
+        paybills.add_new_payee(name,adderss,account,details)
+        options_text = paybills.get_payee_name_from_payee_dropdown()
+&gt;       assert name in options_text
+E       AssertionError: assert &apos;Keyla Stark&apos; in [&apos;Sprint&apos;, &apos;Bank of America&apos;, &apos;Apple&apos;, &apos;Wells Fargo&apos;]
+
+tests\test_add_new_payee.py:32: AssertionError</failure></testcase><testcase classname="tests.test_search.TestSearch" file="tests\test_search.py" line="12" name="test_search" time="1.248"></testcase></testsuite></testsuites>
